@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://anna-boutique-ado-vscode-71b5d42cf0c1.herokuapp.com',
+    'anna-boutique-ado-vscode-71b5d42cf0c1.herokuapp.com',
     '127.0.0.1',
 ]
 
