@@ -22,9 +22,6 @@ class StripeWH_Handler:
         """Send the user a confirmation email"""
 
         cust_email = order.email
-        print(" **************************** ")
-        print(cust_email)
-        print(" **************************** ")
 
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
@@ -35,10 +32,10 @@ class StripeWH_Handler:
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
         
         send_mail(
-            subject = subject,
-            body = body,
-            from_email = settings.DEFAULT_FROM_EMAIL,
-            recipient_list = [cust_email]
+            subject,
+            body,
+            settings.DEFAULT_FROM_EMAIL,
+            [cust_email]
         )        
 
     def handle_event(self, event):
