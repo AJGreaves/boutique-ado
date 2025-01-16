@@ -32,10 +32,10 @@ class StripeWH_Handler:
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
         
         send_mail(
-            subject,
-            body,
-            settings.DEFAULT_FROM_EMAIL,
-            [cust_email]
+            subject = subject,
+            body = body,
+            from_email = settings.DEFAULT_FROM_EMAIL,
+            recipient_list = [cust_email]
         )        
 
     def handle_event(self, event):
