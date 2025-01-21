@@ -31,7 +31,7 @@ DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
     'anna-boutique-ado-d99b707ed56c.herokuapp.com', # heroku url
-    '8000-ajgreaves-boutiqueado-egv10g8c8yc.ws.codeinstitute-ide.net', # gitpod preview
+    '127.0.0.1', # local preview
 ]
 
 
