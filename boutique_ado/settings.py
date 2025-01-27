@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',  # local preview
+    'localhost',  # listen for stripe webhooks
 ]
 
 # Application definition
