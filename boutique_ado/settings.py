@@ -30,8 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
-    'anna-boutique-ado-vscode-71b5d42cf0c1.herokuapp.com',
-    '127.0.0.1',
+    'boutique-ado-anna-ce1a67bd4a6f.herokuapp.com', # heroku app
+    '127.0.0.1', # local preview
+    'localhost', # stripe portal
 ]
 
 
